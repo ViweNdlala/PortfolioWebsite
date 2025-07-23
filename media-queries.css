@@ -22,14 +22,12 @@
     }
 
     .mobile-nav{
-        /* border: 1px solid green; */
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .nav-bar .logo{
-        /* border: 1px solid blue; */
         text-decoration: none;
         color: white;
         display: flex;
@@ -65,8 +63,6 @@
     }
 
     .nav-links a{
-        /* border: 1px solid white; */
-        /* width: 88%; */
         padding: 20px;
         text-align: center;
         text-decoration: none;
@@ -80,7 +76,6 @@
     }
 
     .profile-left{
-        /* border: 1px solid blue; */
         width: 100%;
         height: 90%;
         gap: 3rem;
@@ -115,15 +110,12 @@
     }
     .profile-btns{
         display: flex;
-        /* flex-direction: column; */
         gap: 10px;
     }
     .profile-btns button {
         padding: 10px 15px;
     }
     .profile-icons a{
-        /* margin-top: 0;
-        padding-top: 0; */
         font-size: 2rem;
     }
 }

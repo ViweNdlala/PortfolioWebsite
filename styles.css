@@ -10,14 +10,11 @@ html{
 }
 body{
     font-family: "Poppins", sans-serif;
-    /* font-weight: 500; */
     position: relative;
     overflow-x: hidden;
-    /* background-color: #afc7db; */
 }
 
 .section-header{
-   /* border: 1px solid green; */
    text-align: center;
 }
 .section-header p{
@@ -43,15 +40,12 @@ body{
 }
 
 #header .nav-bar{
-    /* border: 1px solid yellow; */
-    /* padding: 10px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .nav-bar .logo{
-    /* border: 1px solid blue; */
     text-decoration: none;
     color: white;
     display: flex;
@@ -68,7 +62,6 @@ body{
  }
 
  .desktop-nav{
-    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -88,7 +81,6 @@ body{
 
  /* Hero section syles */
  #profile{
-    /* border: 1px solid pink; */
     height: 80vh;
     background-color: #295574;
     padding: 2rem;
@@ -96,19 +88,15 @@ body{
  }
 
  .profile-container{
-    /* border: 1px solid #a0b9ca; */
     border: 1px solid #fff;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 1rem; */
     height: 100%;
-    /* background-color: white; */
  }
 
  .profile-left{
-    /* border: 1px solid blue; */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -118,7 +106,6 @@ body{
     text-align: center;
     gap: 1rem;
     width: 45%;
-    /* font-size: 20px; */
  }
 
  .profile-left h1{
@@ -129,7 +116,6 @@ body{
    gap: 2rem;
 }
 .profile-btns button {
-    /* border: 1px solid black; */
     padding: 15px 25px;
     border-radius: 25px;
     border: none;
@@ -151,21 +137,18 @@ body{
    font-size: 3rem;
  }
 .profile-right{
-   /* border: 1px solid pink; */
    width: 35%;
    height: 80%;
    display: flex;
    align-items: center;
 }
 .profile-right img{
-   /* border: 1px solid white; */
    width: 100%;
 }
 
 
 /* ABOUT SECTION */
 #about{
-   /* border: 1px solid red; */
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -174,12 +157,10 @@ body{
    gap: 2rem;
 }
 .about-container{
-   /* border: 1px solid blue; */
    width: 90%;
 }
 
 .about-summary{
-   /* border: 1px solid black; */
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
@@ -189,7 +170,6 @@ body{
 .topic{
    border: 1px solid rgb(224, 222, 222);
    border-radius: 20px;
-   /* box-shadow: 0 0 1px rgb(101, 148, 236); */
    width: 200px;
    height: 200px;
    display: flex;
@@ -200,7 +180,6 @@ body{
 }
 
 .topic img{
-   /* border: 1px solid red; */
    width: 60px;
    padding-bottom: 10px;
 }
@@ -211,7 +190,6 @@ body{
 }
 
 .summary{
-   /* border: 1px solid yellow; */
    padding-top: 20px;
 }
 
@@ -226,7 +204,6 @@ body{
 
 /* EXPERIENCE SECTION */
 #experience{
-   /* border: 1px solid red; */
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -236,7 +213,6 @@ body{
 }
 
 .experiences-box{
-   /* border: 1px solid rgb(223, 214, 214); */
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -250,7 +226,6 @@ body{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   /* align-items: */
    gap: 1rem;
    padding-bottom: 20px;
    width: 100%;
@@ -265,7 +240,6 @@ body{
 
 /* Projects section */
 #projects{
-   /* border: 1px solid red; */
    padding: 2rem;
    display: flex;
    flex-direction: column;
@@ -280,13 +254,11 @@ body{
 }
 
 .project{
-   /* border: 1px solid grey; */
    align-content: center;
    text-align: center;
 }
 
 /* Contacts Section */
-
 
 .icon-contact img{
    width: 40px;
@@ -300,7 +272,6 @@ body{
    flex-direction: column;
    background-color:#295574;
    color: white;
-   /* height: 50vh; */
 }
 
 .f-top{
@@ -311,7 +282,6 @@ body{
    align-items: center;
    background: url(images/ITPM-footer.jpg) no-repeat center center/cover;
    height: 350px;
-   /* display: none; */
 }
 
 .f-top p{
@@ -324,7 +294,6 @@ body{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   /* height: 50%; */
    gap: 20px;
    padding: 20px;
 }
