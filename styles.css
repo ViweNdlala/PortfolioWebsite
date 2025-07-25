@@ -12,6 +12,7 @@ body{
     font-family: "Poppins", sans-serif;
     position: relative;
     overflow-x: hidden;
+    background-color:#a0b9ca;
 }
 
 .section-header{
