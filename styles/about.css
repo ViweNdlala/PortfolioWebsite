@@ -88,7 +88,7 @@
    /* border: 1px solid red; */
    background: #ffffff;
    /* width: 644px; */
-   height: 192px;
+   /* height: 192px; */
    border-radius: 10px;
    padding-left: 10px;
    padding: 10px;
@@ -117,7 +117,7 @@
    padding: 10px;
 }
 
-.show-card-details{
+.card-details-btn{
    background:#001845;
    color: #ffffff;
    width: 184px;
@@ -137,6 +137,12 @@
    font-weight: 600;
    font-size: 1.2rem;
    
+}
+
+.details-card-content{
+   /* border: 1px solid red; */
+   margin-top: 15px;
+   width: 100%;
 }
 
 
