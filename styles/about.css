@@ -68,7 +68,7 @@
 
 .left-details p{
    width: 287px;
-   height: 179px;
+   height: 150px;
    background:#001845;
    color: #ffffff;
    text-align: center;
@@ -143,6 +143,14 @@
    /* border: 1px solid red; */
    margin-top: 15px;
    width: 100%;
+}
+
+.details-card-content hr{
+   margin-bottom: 10px;
+}
+.details-card-content p{
+   font-weight: 500;
+   margin-left: 30px;
 }
 
 
