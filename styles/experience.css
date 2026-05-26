@@ -1,0 +1,42 @@
+/* EXPERIENCE SECTION */
+#experience{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+   gap: 2rem;
+   /* border: 1px solid blue; */
+}
+
+.experiences-box{
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   width: 90%;
+}
+
+.an-experience{
+   border-bottom: 1px solid rgb(223, 214, 214);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1rem;
+   padding: 50px;
+   width: 200px;
+   height: 200px;
+   border: 1px solid blue;
+}
+
+.exp-name{
+   border: 2px solid blue;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   align-content: center;
+   border-radius: 50%;
+   color: white;
+   background-color: blue;
+}
