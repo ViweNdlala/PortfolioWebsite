@@ -11,6 +11,7 @@
     <!-- CSS Links -->
      <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="/styles/about.css">
+     <link rel="stylesheet" href="/styles/experience.css">
     <link rel="stylesheet" href="media-queries.css">
     <title>Viwe Ndlala</title>
 </head>
@@ -91,17 +92,32 @@
                 <div class="about-introduction">
                     <h2>Aspiring Software Engineer</h2>
                     <p>Computer Science and Business Computing Graduate from University of Cape Town; and Self-learner Web Developer.</p>
+
                     <div class="about-skills">
-                        <p class="about-skill">SA&D</p>
-                        <p class="about-skill">IT PM</p>
-                        <!-- <p class="about-skill">Systems Analysis</p> -->
-                        <p class="about-skill">BPMN</p>
-                        <p class="about-skill">Design Thinking</p>
-                        <p class="about-skill">Scrum</p>
-                        <!-- <p class="about-skill">more478364736476437</p>
-                        <p class="about-skill">more647346356432</p>
-                        <p class="about-skill">more</p>
-                        <p class="about-skill">more</p> -->
+                        <div class="about-skills-group">
+                            <p class="about-skill">SA&D</p>
+                            <p class="about-skill">IT PM</p>
+                            <p class="about-skill">MERN</p>
+                            <p class="about-skill">Graduate(BSc)</p>
+                            <p class="about-skill">BPMN</p>
+                            <p class="about-skill">Design Thinking</p>
+                            <p class="about-skill">FullStack</p>
+                            <p class="about-skill">Scrum</p>
+                            <p class="about-skill">DSA</p>
+                        </div>
+
+                        <!-- aira-hidden to hide the duplicate cards from screen readers -->
+                        <div aria-hidden class="about-skills-group">
+                            <p class="about-skill">SA&D</p>
+                            <p class="about-skill">IT PM</p>
+                            <p class="about-skill">MERN</p>
+                            <p class="about-skill">Graduate(BSc)</p>
+                            <p class="about-skill">BPMN</p>
+                            <p class="about-skill">Design Thinking</p>
+                            <p class="about-skill">FullStack</p>
+                            <p class="about-skill">Scrum</p>
+                            <p class="about-skill">DSA</p>
+                        </div>
                     </div>
                 </div>
 
@@ -114,58 +130,163 @@
                     </div>
                     <div class="right-details">
                         <div class="details-card">
-                            <p>Graduate | University Of Cape Town</p>
+                            <!-- <p>Graduate | University Of Cape Town</p> -->
                             <div class="logo-description graduate">
-                                <img src="images/uct-logo.png" alt="University of Cape Town Logo" width="74" height="74">
-                                <p>BSc. Computer Science and Business Computing</p>
+                                <a href="https://www.uct.ac.za/" target="_blank">
+                                    <img 
+                                        src="images/uct-logo.png" 
+                                        alt="University of Cape Town Logo" 
+                                        width="74" 
+                                        height="74"
+                                        style="cursor: pointer;"
+                                    >
+                                </a>
+                                <div class="sub-logo-descritption">
+                                    <p>Graduate | University Of Cape Town</p>
+                                    <p class="main-subject">BSc. Computer Science and Business Computing</p>
+                                </div>
                             </div>
                             <!-- <input type="submit" class="show-card-details" value="Show more " > -->
-                            <button class=" card-details-btn show-card-details">Show More <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></button>
-                            <button class="card-details-btn hide-card-details">Show Less <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></button>
+                            <button class=" card-details-btn show-card-details">Show More 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
+                                    <path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/>
+                                </svg>
+                            </button>
+                            <button class="card-details-btn hide-card-details">Show Less 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
+                                    <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/>
+                                </svg>
+                            </button>
                             <div class="details-card-content">
                                 <hr>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Python, Java, OOP</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Systems Analysis, Design, and Development</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Software Development Methodologies</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Data Structures & Algorithms (DSA)</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>SQL & Databses</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Multi-threaded Programming</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>IT Project Management</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Business Process Redesign</p>
+                                </div>
                             </div>
                         </div>
                         <div class="details-card self-leaner">
-                            <p>Self-Leaner | W3 Schools</p>
                             <div class="logo-description">
-                                <img src="images/w3schools_logo_25.svg" alt="W3 Schools logo" width="74" height="74">
-                                <p>Full-stack Web Development</p>
+                                <a href="https://www.w3schools.com/" target="_blank">
+                                    <img 
+                                        src="images/w3schools_logo_25.svg"
+                                        alt="W3 Schools logo"
+                                        width="74" 
+                                        height="74"
+                                    >
+                                </a>
+                                <div class="sub-logo-descritption">
+                                    <p>Self-Leaner | W3 Schools</p>
+                                    <p class="main-subject">Full-stack Web Development</p>
+                                </div>
                             </div>
-                            <button class=" card-details-btn show-card-details">Show More <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></button>
-                            <button class=" card-details-btn hide-card-details">Show Less <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></button>
+                            <button class=" card-details-btn show-card-details">Show More
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
+                                    <path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/>
+                                </svg>
+                            </button>
+                            <button class=" card-details-btn hide-card-details">Show Less 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
+                                    <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/>
+                                </svg>
+                            </button>
                             <div class="details-card-content">
                                 <hr>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Frontend</p>
+                                </div>
+                                <div class="sub-skills">
+                                        <p>HTML</p>
+                                        <p>CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>React</p>
+                                    </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Backend</p>
+                                </div>
+                                <div class="sub-skills">
+                                        <p>Node.js</p>
+                                        <p>Epress.js</p>
+                                        <p>RESTful API</p>
+                                        <p>Django</p>
+                                    </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>DataBase(DB)</p>
+                                </div>
+                                <div class="sub-skills">
+                                        <p>MongoDB</p>
+                                        <p>SQL</p>
+                                </div>
                             </div>
                         </div>
                         <div class="details-card design-thinking">
-                            <p>Design Thinking | Dskool-Arika</p>
                             <div class="logo-description">
-                                <img src="images/dskool-logo.png" alt="Dskool-Afrika Logo" width="74" height="74">
-                                <p>Human-Centered Design</p>
+                                <a href="https://dschoolafrika.org/" target="_blank">
+                                    <img 
+                                        src="images/dskool-logo.png"
+                                        alt="Dskool-Afrika Logo"
+                                        width="74"
+                                        height="74"
+                                    >
+                                </a>
+                                <div class="sub-logo-descritption">
+                                    <p>Design Thinking | Dskool-Arika</p>
+                                    <p class="main-subject">Human-Centered Design</p>
+                                </div>
                             </div>
-                            <button class=" card-details-btn show-card-details">Show More <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></button>
-                            <button class=" card-details-btn hide-card-details">Show Less <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></button>
+                            <button class=" card-details-btn show-card-details">Show More 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
+                                    <path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/>
+                                </svg>
+                            </button>
+                            <button class=" card-details-btn hide-card-details">Show Less 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
+                                    <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/>
+                                </svg>
+                            </button>
                             <div class="details-card-content">
                                 <hr>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
-                                <p>IT Project Management</p>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Understand</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Observe</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Point of View</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Ideate</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Prototype</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Test</p>
+                                </div>
+                                <div class="content-item">
+                                    <span class="bullet"></span><p>Implement</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -188,64 +309,42 @@
 
         <div class="experiences-box">
             <div class="an-experience">
-                <div class="exp-date">
-                    <h4>Portfolio Website</h4>
-                    <h4>Jul2025 - Present</h4>
+                <div class="exp-name">
+                    <h4>CES</h4>
                 </div>
-                <p>Developed my Frontend responsive portfolio website with HTML, CSS  and JavaScript.
+                <p>Course engagement Systems
                 </p>
             </div>
             <div class="an-experience">
-                <div class="exp-date">
-                    <h4>Design Thinking</h4>
-                    <h4>Jun2025 - Jun2025</h4>
+                <div class="exp-name">
+                    <h4>DT</h4>
                 </div>
-                <p>Worked in multidisciplinary team of 6 to explore the "History presentation challenge"
-                for Mauzinburg park through the lens of powerful mindset and methodology that enables
-                tackling problems with empathy, creativity and 
-                collaboration.
-                Suggested an infographics sitting bench that will visually represent the hisory of Mauzinburg park
-                to build more awareness and attraction for park visits by community and history enthusiats.
+                <p>Design Thinking
                 </p>
             </div>
             <div class="an-experience">
-                <div class="exp-date">
-                    <h4>Mini BitTorrent System</h4>
-                    <h4>Feb2025 - Mar2025</h4>
+                <div class="exp-name">
+                    <h4>IT PM</h4>
                 </div>
-                <p>Collaborated in a team of 3 developers to design and implement a simplified BitTorrent simulation 
-                enabling simultaneous file distribution to multiple peers, improving understanding of distributed 
-                system efficiency and network utilisation. 
-                Tools and technologies: Java, Socket programming, Multithreading </p>
-            </div>
-            <div class="an-experience">
-                <div class="exp-date">
-                    <h4>Business Process Redesign</h4>
-                    <h4>Aug2024 - Oct2024</h4>
-                </div>
-                <p>Worked with a team of 6 members to define project scope, create a business case, and analyse 
-                ESEFA's "Annual Client Billing" business process using the BP Trends framework. 
-                Interviewed 4 stakeholders (including 1 client and process owner) to holistically view and document 
-                current workflows, identified 5 key process challenges, and proposed solutions for improved 
-                efficiency and clarity. 
-                Scoped business process identified problems and root causes, and redesigned process with visualised 
-                suggested operational and management reports to monitor performance. 
+                <p>IT Project Management
                 </p>
             </div>
             <div class="an-experience">
-                <div class="exp-date">
-                    <h4>IT Project Management</h4>
-                    <h4>Feb2024 - May2024</h4>
+                <div class="exp-name">
+                    <h4>Mini-torrent</h4>
                 </div>
-                <p>Applied Project Management and Design Thinking to convert insights from at least 4 stakeholder 
-                interviews into 3 detailed visual infographics explaining Indigent Grants, RDP housing processes, and 
-                illegal eviction prevention steps for community members. 
-                Practiced leaderful teamwork within a team of 5 to achieve quality project within scope, time and 
-                budget. 
-                Collaboratively defined business case, project charter, planning and delegated tasks to ensure quality project 
-                completion. 
+                <p>Mini Bit BitTorrent
                 </p>
             </div>
+            <div class="an-experience">
+                <div class="exp-name">
+                    <h4>BPMN</h4>
+                </div>
+                <p>Business Process Redesign
+                </p>
+            </div>
+            
+            
         </div>
 
     </section>
