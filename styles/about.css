@@ -95,18 +95,21 @@
    background: url(../images/about-picture2.jpg) no-repeat center/cover;
    width: 287px;
    height: 418px;
+   border-radius: 5px 5px 0px 5px;;
 
 }
 
 .left-details p{
    width: 287px;
    height: 150px;
-   background:#001845;
+   background:#1c3055;
    color: #ffffff;
    text-align: center;
    align-content: center;
    font-weight: 600;
    font-size: 1.2rem;
+   /* border-radius: 0px 5px 5px 5px; */
+   border-radius: 0px 0px 5px 5px;
 
 }
 .right-details{
@@ -136,7 +139,7 @@
 }
 
 .logo-description{
-   border: 1px solid #d9dce4;
+   border: 1px solid #d8d8dd;
    /* margin-left: 10px; */
    margin-right: 10px;
    display: flex;
@@ -271,11 +274,6 @@
 }
 
 
-
-
-
-
-
 .about-self-description{
    /* border: 1px solid red; */
    background: #E6BE1D;
@@ -283,7 +281,7 @@
    font-weight: 600;
    align-content: center;
    padding-left: 50px;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
    /* padding-right: 15px; */
 }
-
-
