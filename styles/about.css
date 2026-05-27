@@ -18,33 +18,66 @@
    gap: 20px;
 }
    
-.about-introduction{
-   /* border: 1px solid green;  */
-   /* padding-bottom: 15px; */
+
+
+.about-introduction h2{
+   color:#001845;
+   margin-bottom: 5px;
 }
 
+
+
 .about-skills{
-   /* border: 1px solid black; */
-   display: flex;
-   align-items: center;
-   gap: 20px;
-   flex-wrap: wrap;
-}
-.about-skill{
    /* border: 1px solid red; */
-   color: white;
-   background: #001845;
-   /* background:#E6BE1D; */
-   /* background:purple; */
-   width: 200px;
-   height: 40px;
-   border-radius: 8px;
-   text-align: center;
-   align-content: center;
-   padding: 2px 4px;
-   /* border-radius: 8px; */
-   /* white-space: nowrap; */
+   /* margin: 0 auto; */
+   padding: 20px 0;
+   /* max-width: 700px; */
+   overflow: hidden;
+   display: flex;
+
+   > * {
+      flex: 0 0 100%;
+   }
+
+   &:hover .about-skills-group {
+      animation-play-state: paused;
+   }
 }
+
+.about-skills-group{
+   display: flex;
+   gap: 20px;
+   padding-right: 20px;
+
+   will-change: transform;
+   animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+.about-skill{
+   width: 100%;
+   color: white;
+   border-radius: 8px;
+   background: #001845;
+   box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+   padding: 2px 4px;
+   align-content: center;
+   text-align: center;
+   /* padding: 20px; */
+   height: 50px;
+   /* justify-content: center; */
+
+   
+}
+
 
 .about-details{
    /* border: 1px solid red; */
@@ -62,19 +95,21 @@
    background: url(../images/about-picture2.jpg) no-repeat center/cover;
    width: 287px;
    height: 418px;
-   height: 480px;
+   border-radius: 5px 5px 0px 5px;;
 
 }
 
 .left-details p{
    width: 287px;
-   height: 179px;
-   background:#001845;
+   height: 150px;
+   background:#1c3055;
    color: #ffffff;
    text-align: center;
    align-content: center;
    font-weight: 600;
    font-size: 1.2rem;
+   /* border-radius: 0px 5px 5px 5px; */
+   border-radius: 0px 0px 5px 5px;
 
 }
 .right-details{
@@ -104,7 +139,7 @@
 }
 
 .logo-description{
-   border: 1px solid #d9dce4;
+   border: 1px solid #d8d8dd;
    /* margin-left: 10px; */
    margin-right: 10px;
    display: flex;
@@ -117,6 +152,14 @@
    padding: 10px;
 }
 
+.sub-logo-descritption{
+   /* border: 1px solid red; */
+   padding-top: 15px;
+}
+
+.sub-logo-descritption .main-subject{
+   font-weight: 500;
+}
 .card-details-btn{
    background:#001845;
    color: #ffffff;
@@ -139,12 +182,96 @@
    
 }
 
-.details-card-content{
-   /* border: 1px solid red; */
+/* .details-card-content{
+   border: 1px solid red;
    margin-top: 15px;
    width: 100%;
+   transition:
+      max-height 0.5s ease,
+      opacity 0.4s ease;
+} */
+
+.details-card-content hr{
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
+.details-card-content{
+   max-height: 0;
+   opacity: 0;
+   overflow: hidden;
+
+   transform: translateY(-10px);
+
+   transition:
+      max-height 0.7s ease,
+      opacity 0.6s ease,
+      transform 0.6s ease;
+}
+
+.details-card-content.active{
+   max-height: 500px;
+   opacity: 1;
+   transform: translateY(0);
+   
+}
+
+.content-item{
+   display: flex;
+   /* border: 1px solid red; */
+   align-items: center;
+   /* justify-content: center; */
+   margin-left: 30px;
+   margin-bottom: 10px;
+   padding: 5px;
+
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+   gap: 10px;
+   border: 1px solid #e3e4e6;
+   
+}
+
+.content-item p{
+   margin: 0;
+}
+
+.bullet{
+   /* border: 1px solid black; */
+   width: 50px;
+   height: 50px;
+   padding: 2px;
+   border-radius: 50%;
+   
+
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: #001845;
+   display: inline-block;
+}
+
+
+
+.sub-skills{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 10px;
+   /* border: 1px solid red; */
+   margin-left: 50px;
+}
+
+.sub-skills p{
+   border: 1px solid rgb(235, 230, 230);
+   padding-left: 10px;
+}
+
+.details-card-content p{
+   font-weight: 500;
+   /* margin-left: 30px; */
+   /* border: 1px solid red; */
+}
 
 
 .about-self-description{
@@ -154,5 +281,7 @@
    font-weight: 600;
    align-content: center;
    padding-left: 50px;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
    /* padding-right: 15px; */
 }
