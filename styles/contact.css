@@ -13,7 +13,7 @@
     padding: 2.2rem;
     margin-top: 1rem;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.95);
+    background: #f8f9fb;
     border: 1px solid rgba(41, 85, 116, 0.12);
     box-shadow: 0 24px 60px rgba(9, 32, 64, 0.1);
 }

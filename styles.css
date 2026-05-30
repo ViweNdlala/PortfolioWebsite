@@ -23,64 +23,6 @@ body{
    color: rgb(83, 82, 82);
 }
 
-/* Base styles for desktop */
-#header{
-    border-bottom: 1px solid #a0b9ca;
-    padding: 20px;
-    background-color: #295574;
-    color: white;
-    height: 10vh;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left:0;
-    right:0;
-
-    z-index: 1000;
-}
-
-#header .nav-bar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav-bar .logo{
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    border: none;
-    outline: none;
- }
- .logo img{
-    width: 70px;
-    border: 2px solid white;
-    border-radius: 50%;
-    box-shadow: 0 0 2px 1px #3587c2;
- }
-
- .desktop-nav{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
- }
-
- .desktop-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 400;
- }
-
- .mobile-nav{
-    display: none;
- }
-
 
  /* Hero section syles */
  #profile{
