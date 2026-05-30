@@ -157,79 +157,7 @@ body{
 
 
 
-/* Projects section */
-#projects{
-   padding: 2rem;
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-}
 
-.projects-container{
-   display: flex;
-   justify-content: center;
-   align-items: stretch;
-   gap: 1.5rem;
-   flex-wrap: wrap;
-}
-
-.project{
-   background-color: #ffffff;
-   border-radius: 20px;
-   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   gap: 1rem;
-   padding: 1.5rem 1.25rem 1.25rem;
-   max-width: 300px;
-   width: 100%;
-}
-
-.project .project-image{
-   width: 100%;
-}
-
-.project .project-image img{
-   width: 100%;
-   height: auto;
-   display: block;
-   border-radius: 6px;
-}
-
-.project p{
-   font-weight: 600;
-   margin: 0;
-}
-
-.app-buttons{
-   display: flex;
-   justify-content: center;
-   gap: 0.75rem;
-}
-
-.project-btn{
-   padding: 0.4rem 0.9rem;
-   border-radius: 999px;
-   border: 1px solid #295574;
-   background-color: #295574;
-   color: #ffffff;
-   font-size: 0.75rem;
-   cursor: pointer;
-   transition: all 0.2s ease-in-out;
-}
-
-.project-btn:hover{
-   background-color: #ffffff;
-   border: 1px solid #295574;
-   color: #295574;
-}
-
-.coming-soon{
-   justify-content: center;
-   align-items: center;
-}
 
 /* Contacts Section */
 
