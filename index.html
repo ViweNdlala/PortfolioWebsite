@@ -13,6 +13,8 @@
      <link rel="stylesheet" href="styles/about.css">
      <link rel="stylesheet" href="styles/experience.css">
      <link rel="stylesheet" href="styles/projects.css">
+     <link rel="stylesheet" href="styles/contact.css">
+     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="media-queries.css">
     <title>Viwe Ndlala</title>
 </head>
@@ -525,12 +527,75 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <footer id="footer">
-        <div class="f-top">
-            <!-- <h2>Open to opportunities for contribution, innovation and growth</h2>
-            <p>Let's build something impactful together</p> -->
+    <!-- Contacts section -->
+     <section id="contact">
+        <div class="section-header">
+            <p>Get in Touch</p>
+            <h2>Contact Me</h2>
         </div>
+
+        <div class="contact">
+            <div class="contact-left">
+                <h3>Let's build something together.</h3>
+                <p>I'm always interested in solving impactful problems, contributing to innovative projects, and exploring new career opportunities. Share your details below, and let's connect.</p>
+                <p class="contact-note">I’m ready to help with web development, software design, or any digital solution that adds value.</p>
+
+                <!-- clickable icons to connect with me -->
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/viwe-ndlala-0aaa87364/" target="_blank" aria-label="LinkedIn">
+                        <i class='bxl bx-linkedin'></i>
+                    </a>
+
+                    <a href="mailto:viwendlala806@gmail.com" aria-label="Email">
+                        <i class='bxl bx-gmail'></i>
+                    </a>
+
+                    <a href="https://wa.me/+27786147918" target="_blank" aria-label="WhatsApp">
+                        <i class='bxl bx-whatsapp'></i>
+                    </a>
+
+                    <a href="tel:+27786147918" aria-label="Phone">
+                        <i class='bx bx-phone'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <!-- contact form -->
+                <form id="contact-form">
+                    <div class="contact-form-intro">
+                        <!-- <p>Send me a message with your goals, timeline, and any important details. I’ll reply with next steps or availability.</p> -->
+                        <p>Let's connect</p>
+                    </div>
+
+                    <label for="fname">First Name</label>
+                    <input type="text" name="from_name" id="fname" placeholder="Your first name.." required>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="last_name" id="lname" placeholder="Your last name.." required>
+
+                    <label for="continent">Continent</label>
+                    <select name="continent" id="continent" required>
+                        <option value="">Select</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North-america">North America</option>
+                        <option value="South-america">South America</option>
+                    </select>
+
+                    <label for="subject">Message</label>
+                    <textarea name="message" id="subject" placeholder="Write your message here..." required></textarea>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+     </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
         <div class="f-bottom">
             <div class="f-summary">
                 <div class="f-logo">
@@ -574,6 +639,7 @@
         </di>
     </footer>
     <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

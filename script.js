@@ -25,24 +25,6 @@ detailsCards.forEach( detailsCard =>{
     const hidecardDetails = detailsCard.querySelector('.hide-card-details');
     const detailsCardContent = detailsCard.querySelector('.details-card-content');
 
-    // // Initial state of arrows
-    // detailsCardContent.style.display = "none";
-    // hidecardDetails.style.display = "none";
-    
-    // // Show details card content on clisk
-    // showcardDetails.addEventListener('click', () =>{
-    //     detailsCardContent.style.display = "inline-block";
-    //     showcardDetails.style.display = "none";
-    //     hidecardDetails.style.display = "flex";
-    // });
-
-    // // Hide details card content on click
-    // hidecardDetails.addEventListener('click', () =>{
-    //     detailsCardContent.style.display = "none";
-    //     showcardDetails.style.display = "flex";
-    //     hidecardDetails.style.display = "none";
-    // });
-
     // Initial state
     hidecardDetails.style.display = "none";
 
@@ -64,3 +46,31 @@ detailsCards.forEach( detailsCard =>{
         hidecardDetails.style.display = "none";
     });
 });
+
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', sendEmail);
+}
+
+function sendEmail(e) {
+    e.preventDefault();
+
+    if (typeof emailjs === 'undefined') {
+        alert('Email service is not loaded yet. Please try again in a moment.');
+        return;
+    }
+
+    emailjs.sendForm(
+        'service_xdr42ee',
+        'template_1blt3x9',
+        contactForm,
+        'FdOlkDOtj8Wc_OJ0K'
+    )
+    .then((result) => {
+        alert('Message sent!');
+        contactForm.reset();
+    }, (error) => {
+        alert('Failed to send message. Please try again.');
+    });
+}
