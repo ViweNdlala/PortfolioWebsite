@@ -1,23 +1,50 @@
 
 
-// Hamburger
+// ═══════════════════════════════════════════════════════════
+// HAMBURGER MENU
+// ═══════════════════════════════════════════════════════════
 const hamburger = document.getElementsByClassName('bx-menu-wide');
 const navLinks = document.getElementsByClassName('nav-links');
-hamburger[0].addEventListener('click', hideNavLinks);
+const navLinksAnchors = document.querySelectorAll('.nav-links a');
 
-// About details card content
-const detailsCards = document.querySelectorAll('.details-card');
+// Toggle mobile menu on hamburger click
+if (hamburger.length > 0) {
+    hamburger[0].addEventListener('click', toggleMobileMenu);
+}
 
+// Close menu when a navigation link is clicked
+navLinksAnchors.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+});
 
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+    const header = document.getElementById('header');
+    const isClickInsideHeader = header.contains(event.target);
+    if (!isClickInsideHeader && navLinks[0] && navLinks[0].classList.contains('active')) {
+        closeMobileMenu();
+    }
+});
 
-// Hamburger function
-function hideNavLinks(event){
-    if(navLinks[0].classList.contains('active')){
-        navLinks[0].classList.remove('active');
-    }else{
-        navLinks[0].classList.add('active');
+// Hamburger toggle function
+function toggleMobileMenu(event) {
+    if (navLinks[0]) {
+        navLinks[0].classList.toggle('active');
     }
 }
+
+// Close mobile menu function
+function closeMobileMenu() {
+    if (navLinks[0]) {
+        navLinks[0].classList.remove('active');
+    }
+}
+
+// ═══════════════════════════════════════════════════════════
+// ABOUT DETAILS CARD CONTENT
+// ═══════════════════════════════════════════════════════════
+
+const detailsCards = document.querySelectorAll('.details-card');
 
 // About details card content function
 detailsCards.forEach( detailsCard =>{

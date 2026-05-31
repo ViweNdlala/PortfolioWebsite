@@ -13,6 +13,7 @@ body{
     position: relative;
     overflow-x: hidden;
     background-color:#e3e7eb;
+    padding-top: 80px;
 }
 
 .section-header{
@@ -29,7 +30,7 @@ body{
     height: 80vh;
     background-color: #295574;
     padding: 2rem;
-    margin-top: 100px;
+    margin-top: 0;
  }
 
  .profile-container{
