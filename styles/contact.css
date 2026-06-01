@@ -1,7 +1,7 @@
 /* Contact Section */
 #contact {
     padding: 4rem 2%;
-    /* background: #eef4fb; */
+    background: #eef4fb;
 }
 
 #contact .contact {
@@ -13,9 +13,9 @@
     padding: 2.2rem;
     margin-top: 1rem;
     border-radius: 12px;
-    background: #f8f9fb;
+    /* background: #f8f9fb; */
     border: 1px solid rgba(41, 85, 116, 0.12);
-    box-shadow: 0 24px 60px rgba(9, 32, 64, 0.1);
+    /* box-shadow: 0 24px 60px rgba(9, 32, 64, 0.1); */
 }
 
 #contact .contact-left {
@@ -32,14 +32,14 @@
 }
 
 #contact .contact-left p {
-    color: #4f6378;
+    color: #0d1b2b;
     line-height: 1.8;
     max-width: 560px;
     font-size: 1rem;
 }
 
 #contact .contact-note {
-    color: #1f425e;
+    color: #001845;
     font-weight: 600;
 }
 
@@ -59,7 +59,7 @@
     border-radius: 20px;
     background: #f6fbff;
     border: 1px solid rgba(41, 85, 116, 0.15);
-    color: #295574;
+    color: #001845;
     font-size: 1.45rem;
     transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
     box-shadow: 0 14px 30px rgba(41, 85, 116, 0.08);
@@ -83,7 +83,7 @@
     gap: 1rem;
     padding: 3rem;
     border-radius: 10px;
-    background: #ffffff;
+    background: #001845;
     border: 1px solid rgba(41, 85, 116, 0.12);
     box-shadow: 0 20px 50px rgba(9, 32, 64, 0.08);
 }
@@ -91,13 +91,14 @@
 #contact .contact-form-intro {
     padding: 1rem 1.2rem;
     border-left: 4px solid #ebb93b;
-    background: #fff7df;
+    background: #f1cd61;
     border-radius: 10px;
 }
 
 #contact .contact-form-intro p {
     margin: 0;
-    color: #4f6378;
+    /* color: #4f6378; */
+    color: #001845;
     line-height: 1.7;
     font-size: 0.98rem;
 }
@@ -105,7 +106,7 @@
 #contact label {
     display: block;
     margin-bottom: 0.35rem;
-    color: #27415f;
+    color: #ffffff;
     font-weight: 600;
 }
 
