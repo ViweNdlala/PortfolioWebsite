@@ -20,8 +20,12 @@
    max-width: 700px;
    /* margin: 0 auto; */
    line-height: 1.7;
-   color: #555;
+   /* color: #555; */
    font-size: 1rem;
+}
+
+.experience-introduction h2{
+    color:#001845;
 }
 
 /* CARDS CONTAINER */
@@ -38,7 +42,7 @@
 .an-experience{
     width: 250px;
     min-height: 380px;
-    background: #ffffff;
+    background-color:#e3e7eb;
     border-radius: 14px;
     padding: 2rem 1.5rem;
     text-align: center;
@@ -94,7 +98,7 @@
 /* DESCRIPTION */
 
 .an-experience p{
-    color: #555;
+    /* color: #555; */
     line-height: 1.7;
     font-size: 1rem;
 }
