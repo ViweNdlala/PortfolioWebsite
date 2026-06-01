@@ -175,12 +175,12 @@
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
     will-change: transform;
-    animation: heroCardFloat 6s ease-in-out infinite;
+    animation: heroCardFloat 5s ease-in-out infinite;
 }
 
 @keyframes heroCardFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.06); }
 }
 
 /* Hover effect */
@@ -228,7 +228,7 @@
 .communication{
   position: absolute;
   top: 55%;
-  left: 8px;
+  left: 2%;
 }
 
 .info-sys{
@@ -246,7 +246,7 @@
 .solve-problems{
   position: absolute;
   top: 55%;
-  right: 8px;
+  right: 2%;
 }
 
 .software-engineering{
@@ -268,21 +268,22 @@
 
   .profile-left{
     width: 90%;
-    height: 40%;
-    gap: .2rem;
+    height: auto;
+    min-height: 40%;
+    gap: .6rem;
+    padding: 1.5rem 0;
   }
 
 
   .profile-right{
     height: 55%;
     width: 90%;
-
-}
+  }
 }
 
 @media (max-width: 767px) {
   .profile-container{
-    background: url("../images/profile3.png") no-repeat center center/cover;
+    background: url("../images/profile-picture1.jpg") no-repeat center center/cover;
     padding: 0 2%;
   }
 
@@ -298,8 +299,8 @@
     background:
       linear-gradient(
         135deg,
-        rgba(0, 24, 69, 0.25),
-        rgba(0, 24, 69, 0.45)
+        rgba(0, 24, 69, 0.45),
+        rgba(0, 24, 69, 0.75)
       );
   }
 
