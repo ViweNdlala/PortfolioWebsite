@@ -1,0 +1,334 @@
+/* Hero section syles */
+ #profile{
+    height: 100vh;
+    background-color: #001845;
+    padding: 2rem;
+    margin-top: 0;
+ }
+
+ .profile-container{
+    /* border: 1px solid #fff; */
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    /* background:#5786df; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background: #001845;
+    box-shadow:
+      inset 0  1px 0   rgba(255, 255, 255, 0.09),   /* top rim light  */
+      inset 0 -2px 8px rgba(0,   0,   0,   0.35),   /* inner base shadow */
+      0  6px 20px rgba(0, 0, 0,     0.45),           /* near drop      */
+      0 20px 60px rgba(0, 8, 30,    0.55);           /* deep ambient   */
+ }
+
+ .profile-left{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 40%;
+    height: 90%;
+    border: 1px solid white;
+    background: #011a49;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    box-shadow:
+      inset  0  1px 0   rgba(255, 255, 255, 0.11),  /* top rim        */
+      inset  1px 0  0   rgba(255, 255, 255, 0.06),  /* left rim       */
+      0  4px 12px rgba(0,  0,  0,   0.40),          /* near shadow    */
+      0 12px 36px rgba(0,  8,  30,  0.45),          /* mid ambient    */
+      0 24px 60px rgba(0,  0,  0,   0.30);          /* wide soft halo */
+ }
+
+.profile-left h1{
+   color: rgb(238, 173, 8);
+   text-shadow:
+      0 2px 8px rgba(238, 173, 8, 0.25),
+      0 4px 18px rgba(238, 173, 8, 0.15);
+   letter-spacing: 0.5px;
+}
+
+.profile-btns{
+   display: flex;
+   gap: 2rem;
+}
+
+.profile-btns button{
+   padding: 15px 25px;
+   border-radius: 30px;
+   border: 1px solid rgba(255,255,255,0.15);
+   outline: none;
+   cursor: pointer;
+
+   background: linear-gradient(
+      135deg,
+      rgb(238, 173, 8),
+      rgb(255, 193, 36)
+   );
+
+   color: #ffffff;
+   font-weight: 600;
+   letter-spacing: 0.4px;
+
+   box-shadow:
+      0 4px 12px rgba(238, 173, 8, 0.25),
+      0 10px 24px rgba(0, 0, 0, 0.15);
+
+   transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background 0.25s ease,
+      color 0.25s ease;
+}
+
+.profile-btns button:hover{
+   transform: translateY(-3px);
+
+   background: rgba(255,255,255,0.95);
+   color: #001845;
+
+   box-shadow:
+      0 8px 20px rgba(255,255,255,0.15),
+      0 14px 35px rgba(0,0,0,0.25);
+}
+
+.profile-btns button:active{
+   transform: translateY(-1px);
+}
+
+.profile-icons{
+   display: flex;
+   gap: 1.25rem;
+}
+
+.profile-icons a{
+   text-decoration: none;
+   color: rgba(255,255,255,0.9);
+   font-size: 3rem;
+
+   transition:
+      transform 0.25s ease,
+      color 0.25s ease,
+      text-shadow 0.25s ease;
+}
+
+.profile-icons a:hover{
+   color: rgb(238, 173, 8);
+   transform: translateY(-4px);
+
+   text-shadow:
+      0 0 12px rgba(238, 173, 8, 0.35),
+      0 0 24px rgba(238, 173, 8, 0.15);
+}
+
+
+.profile-right{
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  width: 55%;
+  height: 90%;
+  overflow: hidden;
+  background: #002b55;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  box-shadow:
+    inset  0  1px 0   rgba(255, 255, 255, 0.10),
+    inset  1px 0  0   rgba(255, 255, 255, 0.05),
+    0  4px 12px rgba(0,  0,  0,   0.42),
+    0 14px 40px rgba(0,  8,  30,  0.48),
+    0 28px 70px rgba(0,  0,  0,   0.28);
+
+}
+
+.problem-solving{
+    border-radius: 15px;
+    padding: 3rem;
+    background:
+    linear-gradient(
+        rgba(41, 85, 116, 0.5),
+        rgba(41, 85, 116, 0.5)
+    ),
+    url("../images/profile-picture1.jpg") no-repeat center/cover;
+    width: 100%;
+}
+
+.hero-card{
+    border: 1px solid rgba(255,255,255,0.85);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 6px 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* subtle frosted, top transparent effect via gradient */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.85) 70%);
+    color: #001845;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    will-change: transform;
+    animation: heroCardFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroCardFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Hover effect */
+
+.hero-card svg{
+  border: 1px solid rgba(0,24,69,0.95);
+  fill: rgba(0,24,69,0.95);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: .25rem;
+  background: transparent;
+  transition: transform .22s ease, background .22s ease, fill .22s ease, border-color .22s ease;
+}
+
+.hero-card p{
+  color: #001845;
+  font-size: large;
+  margin: 0;
+  transition: color .22s ease;
+}
+
+/* Hover / focus effects - don't change layout positions */
+.hero-card:hover,
+.hero-card:focus-within{
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.98) 70%);
+}
+
+.hero-card:hover svg,
+.hero-card:focus-within svg{
+  transform: translateY(-2px) scale(1.06);
+  background: #001845;
+  fill: #ffffff;
+  border-color: #001845;
+}
+
+.hero-card:hover p,
+.hero-card:focus-within p{
+  color: #001845;
+}
+
+/* Position each hero card */
+.communication{
+  position: absolute;
+  top: 55%;
+  left: 8px;
+}
+
+.info-sys{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.collaboration{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.solve-problems{
+  position: absolute;
+  top: 55%;
+  right: 8px;
+}
+
+.software-engineering{
+  position: absolute;
+  top: 70%;
+  right: 30%;
+}
+
+
+/* Responsive styles */
+@media (max-width: 1090px) {
+
+}
+
+@media (max-width: 870px) {
+  .profile-container{
+    flex-direction: column;
+  }
+
+  .profile-left{
+    width: 90%;
+    height: 40%;
+    gap: .2rem;
+  }
+
+
+  .profile-right{
+    height: 55%;
+    width: 90%;
+
+}
+}
+
+@media (max-width: 767px) {
+  .profile-container{
+    background: url("../images/profile3.png") no-repeat center center/cover;
+    padding: 0 2%;
+  }
+
+  .profile-left{
+    /* background: #f1f1f1f1; */
+    margin: 0px 20px;
+    width: 100%;
+    height: 90%;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    background:
+      linear-gradient(
+        135deg,
+        rgba(0, 24, 69, 0.25),
+        rgba(0, 24, 69, 0.45)
+      );
+  }
+
+  .profile-btns button {
+    padding: 10px 20px;
+  }
+
+  .profile-icons a{
+    font-size: 2rem;
+  }
+
+  .profile-right{
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .profile-left{
+    gap: 1rem;
+  }
+  .profile-btns{
+    display: flex;
+    gap: 10px;
+  }
+  .profile-btns button {
+    padding: 10px 15px;
+  }
+  .profile-icons a{
+    font-size: 2rem;
+  }
+    
+}

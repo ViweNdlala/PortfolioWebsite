@@ -24,70 +24,21 @@ body{
    color: rgb(83, 82, 82);
 }
 
+/* RESPONSIVE STYLES */
+@media (max-width: 991px) {
 
- /* Hero section syles */
- #profile{
-    height: 80vh;
-    background-color: #295574;
-    padding: 2rem;
-    margin-top: 0;
- }
-
- .profile-container{
-    border: 1px solid #fff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
- }
-
- .profile-left{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    width: 45%;
- }
-
- .profile-left h1{
-   color: rgb(238, 173, 8);
- }
-.profile-btns{
-   display: flex;
-   gap: 2rem;
 }
-.profile-btns button {
-    padding: 15px 25px;
-    border-radius: 25px;
-    border: none;
-    outline:none;
-    background-color: white;
-    background-color:rgb(238, 173, 8);
-    color: white;
-    font-weight: 600;
- }
 
- .profile-btns button:hover{
-   background-color: white;
-   color:#295574;
- } 
-
- .profile-icons a{
-   text-decoration: none;
-   color: white;
-   font-size: 3rem;
- }
-.profile-right{
-   width: 35%;
-   height: 80%;
-   display: flex;
-   align-items: center;
+@media (max-width: 768px) {
+  /* Tablets - adjust body padding to match header height */
+  body {
+      padding-top: 75px;
+  }
 }
-.profile-right img{
-   width: 100%;
+
+@media (max-width: 480px) {
+  /* Phones - adjust body padding to match header height */
+  body {
+      padding-top: 70px;
+  }
 }
