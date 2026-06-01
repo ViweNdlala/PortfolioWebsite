@@ -322,11 +322,11 @@
     gap: 1rem;
   }
   .profile-btns{
-    display: flex;
+    /* display: flex; */
     gap: 10px;
   }
   .profile-btns button {
-    padding: 10px 15px;
+    padding: 6px 11px;
   }
   .profile-icons a{
     font-size: 2rem;
