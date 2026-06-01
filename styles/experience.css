@@ -10,17 +10,13 @@
 /* INTRODUCTION */
 
 .experience-introduction{
-    /* text-align: center; */
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
 .experience-introduction p{
-   /* border: 1px solid red; */
    max-width: 700px;
-   /* margin: 0 auto; */
    line-height: 1.7;
-   /* color: #555; */
    font-size: 1rem;
 }
 
@@ -50,9 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-
     transition: 0.3s ease;
 }
 
@@ -61,7 +55,6 @@
 }
 
 /* CIRCLE */
-
 .exp-name{
     width: 90px;
     height: 90px;
@@ -80,7 +73,6 @@
 }
 
 /* DATE */
-
 .an-experience h5{
     font-size: 1rem;
     margin-bottom: 2rem;
@@ -88,7 +80,6 @@
 }
 
 /* TITLE */
-
 .an-experience h3{
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
@@ -96,7 +87,6 @@
 }
 
 /* DESCRIPTION */
-
 .an-experience p{
     /* color: #555; */
     line-height: 1.7;

@@ -7,9 +7,7 @@
  }
 
  .profile-container{
-    /* border: 1px solid #fff; */
     border: 1px solid rgba(255, 255, 255, 0.14);
-    /* background:#5786df; */
     border-radius: 10px;
     display: flex;
     justify-content: space-around;

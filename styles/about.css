@@ -1,6 +1,5 @@
 /* ABOUT SECTION */
 #about{
-   /* border: 1px solid red; */
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -11,7 +10,6 @@
 }
 
 .about-content{
-   /* border: 1px solid red; */
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: repeat(3);
@@ -28,8 +26,6 @@
 
 
 .about-skills{
-   /* border: 1px solid red; */
-   /* margin: 0 auto; */
    padding: 20px 0;
    overflow: hidden;
    display: flex;
@@ -70,9 +66,7 @@
    padding: 2px 4px;
    align-content: center;
    text-align: center;
-   /* padding: 20px; */
    height: 50px;
-   /* justify-content: center; */
 
    
 }
