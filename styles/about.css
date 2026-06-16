@@ -9,6 +9,7 @@
    
 }
 
+/* about content box */
 .about-content{
    display: grid;
    grid-template-columns: 1fr;
@@ -24,7 +25,7 @@
 }
 
 
-
+/* Start of about skills infinite scroll */
 .about-skills{
    padding: 20px 0;
    overflow: hidden;
@@ -39,6 +40,7 @@
    }
 }
 
+/* Group of skills */
 .about-skills-group{
    display: flex;
    gap: 20px;
@@ -57,6 +59,7 @@
     }
 }
 
+/* Infinite scroll */
 .about-skill{
    width: 100%;
    color: white;
