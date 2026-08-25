@@ -31,6 +31,12 @@
 }
 
 /* Personal Projects — navy header */
+.group-projects .projects-header-title {
+   background: #1c3055;
+   color: #ffffff;
+}
+
+/* Personal Projects — navy header */
 .personal-projects .projects-header-title {
    background: #1c3055;
    color: #ffffff;
@@ -38,7 +44,7 @@
 
 /* Tutorial Projects — gold header */
 .tutorial-projects .projects-header-title {
-   background: #E6BE1D;
+   background: #1c3055;
    /* color: #1c3055; */
    color: #ffffff;
 }
